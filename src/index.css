@@ -34,3 +34,9 @@ body {
 .MenuOption {
   flex-grow: 1;
 }
+.AddPayment {
+  background-color: #a9d540;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  height: 100px;
+}
