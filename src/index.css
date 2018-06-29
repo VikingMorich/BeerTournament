@@ -2,4 +2,35 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #8cb858;
+}
+.BeerList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.ListRow {
+  background-color: #a9d540;
+  height: 60px;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.ListElementDebt {
+  flex-grow: 3;
+  text-align: left;
+  margin-left: 20px;
+}
+.ListElementNumber {
+  flex-grow: 1;
+}
+.TopMenu {
+  background-color: #62833b;
+  display: flex;
+  justify-content: center;
+}
+.MenuOption {
+  flex-grow: 1;
 }
