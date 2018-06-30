@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 // using ES6 modules
-import { Link } from 'react-router-dom';
-import { Router, Route, Switch } from 'react-router';
-import BeerList from './components/BeerList';
+import { Link, HashRouter, Route } from 'react-router-dom';
+import { Router, Switch } from 'react-router';
+import BeerTable from './components/BeerTable';
+import AddBeer from './components/AddBeer';
+import Footer from './components/Footer';
 
 class App extends Component {
   constructor() {
@@ -20,33 +22,25 @@ class App extends Component {
   }
   render() {
     const menuItems = this.state.menuOptions.map(item => (
-      <p className="MenuOption" key={item.id}>
-        <p>{item.name}</p>
-      </p>
+      <div className="MenuOption" key={item.id}>
+        <p>
+          <b>{item.name}</b>
+        </p>
+      </div>
     ));
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">🤘🏼🍺 Beer Tournament 🍺🤘🏼</h1>
-        </header>
-        <div className="TopMenu">{menuItems}</div>
-        <h3>Counter</h3>
-        <div className="BeerList">
-          <BeerList />
+      <HashRouter>
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <h1 className="App-title">🤘🏼🍺 Beer Tournament 🍺🤘🏼</h1>
+          </header>
+          <div className="TopMenu">{menuItems}</div>
+          <Route exact path="/" component={BeerTable} />
+          <Route exact path="/add" component={AddBeer} />
+          <Route path="/" component={Footer} />
         </div>
-        <div className="AddPayment">
-          <form>
-            Winner:
-            <input type="text" name="winner" />
-            Loser:
-            <input type="text" name="loser" />
-            Number of beers:
-            <input type="number" name="xbeers" />
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-      </div>
+      </HashRouter>
     );
   }
 }

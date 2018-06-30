@@ -14,6 +14,15 @@
   color: white;
 }
 
+.App-footer {
+  background-color: #222;
+  font-size: 0.5em;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
 .App-title {
   font-size: 1.5em;
 }
@@ -23,6 +32,10 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

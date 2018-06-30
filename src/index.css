@@ -12,7 +12,7 @@ body {
 .ListRow {
   background-color: #a9d540;
   height: 60px;
-  width: 400px;
+  width: 21em;
   margin: auto;
   margin-bottom: 20px;
   display: flex;
@@ -36,7 +36,17 @@ body {
 }
 .AddPayment {
   background-color: #a9d540;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  width: 21em;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding: 2em;
   height: 100px;
+}
+.AddBeerForm {
+  margin: auto;
+  margin-bottom: 1em;
+}
+tr {
+  margin-top: 0.3em;
 }
