@@ -33,12 +33,13 @@ body {
 }
 .MenuOption {
   flex-grow: 1;
+  color: black;
 }
 .AddPayment {
   background-color: #a9d540;
-  width: 21em;
+  width: 19em;
   margin: auto;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 3em;
   padding: 2em;
   height: 100px;

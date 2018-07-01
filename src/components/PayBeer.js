@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-class AddBeer extends Component {
+class PayBeer extends Component {
   render() {
     return (
-      <div className="AddContainer">
+      <div className="PayContainer">
         <h2>
-          <u>Add a Beer</u>
+          <u>Pay a Beer</u>
         </h2>
         <div className="AddPayment">
           <form>
@@ -13,15 +13,15 @@ class AddBeer extends Component {
               <thead />
               <tbody>
                 <tr>
-                  <td>Winner:</td>
+                  <td>From:</td>
                   <td>
-                    <input type="text" name="winner" />
+                    <input type="text" name="from" />
                   </td>
                 </tr>
                 <tr>
-                  <td>Loser:</td>
+                  <td>To:</td>
                   <td>
-                    <input type="text" name="loser" />
+                    <input type="text" name="to" />
                   </td>
                 </tr>
                 <tr>
@@ -40,4 +40,4 @@ class AddBeer extends Component {
   }
 }
 
-export default AddBeer;
+export default PayBeer;

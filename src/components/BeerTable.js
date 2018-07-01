@@ -5,7 +5,9 @@ class BeerTable extends Component {
   render() {
     return (
       <div>
-        <h3>Counter</h3>
+        <h2>
+          <u>InteriorFIFA Counter</u>
+        </h2>
         <div className="BeerList">
           <BeerList />
         </div>
