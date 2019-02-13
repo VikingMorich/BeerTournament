@@ -35,7 +35,7 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">🤘🏼🍺 Beer Tournament 🍺🤘🏼</h1>
+            <h1 className="App-title">🤘🏼🍺 New Counter 🍺🤘🏼</h1>
           </header>
           <div className="TopMenu">{menuItems}</div>
           <Route exact path="/" component={BeerTable} />
