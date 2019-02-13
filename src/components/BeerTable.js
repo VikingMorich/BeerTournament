@@ -6,7 +6,7 @@ class BeerTable extends Component {
     return (
       <div>
         <h2>
-          <u>InteriorFIFA Counter</u>
+          <u>Counter</u>
         </h2>
         <div className="BeerList">
           <BeerList />
